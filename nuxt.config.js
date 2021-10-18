@@ -15,5 +15,10 @@ export default defineNuxtConfig({
     ],
   },
 
-  buildModules: [["~/modules/nuxt-storyblok", { heey: "hoee" }]],
+  buildModules: [
+    [
+      "~/modules/nuxt-storyblok",
+      { accessToken: process.env.API_TOKEN, cacheProvider: "memory" },
+    ],
+  ],
 });

@@ -23,6 +23,16 @@
 <script setup>
 const config = useRuntimeConfig();
 
+// ***
+// * Here's how you can access the provided storyapi and storybridge libs
+// ***
+//
+// const nuxtApp = useNuxtApp();
+// onMounted(() => {
+//   console.log(nuxtApp.$storyapi);
+//   console.log(nuxtApp.$storybridge);
+// });
+
 const { data: products } = await useFetch(`/cdn/stories`, {
   baseURL: config.apiURL,
   params: {

@@ -6,7 +6,7 @@ export default defineNuxtModule({
     addPluginTemplate({
       src: path.resolve(__dirname, "plugin-template.js"),
       mode: "client",
-      options: { options },
+      options,
     });
   },
 });
