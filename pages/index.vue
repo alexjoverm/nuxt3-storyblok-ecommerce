@@ -5,6 +5,8 @@
         class="shadow rounded overflow-hidden"
         v-for="product in products.stories"
         :key="product._uid"
+        :blok="product"
+        v-editable="product"
       >
         <div>
           <img class="w-full" :src="product.content.image.filename" alt="" />

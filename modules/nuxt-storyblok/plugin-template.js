@@ -17,12 +17,10 @@ const StoryblokVue = {
   install: (app) => {
     app.directive("editable", {
       beforeMount(el, binding) {
-        console.log('YEYYEYE')
         console.log(el)
         console.log(binding)
-        console.log(binding.value)
         if (binding.value) {
-          const node = binding.value._editable;
+          const node = binding.value.content._editable;
           if (typeof node === "undefined" || node === null) return;
   
           const cleared = node.replace("<!--#storyblok#", "").replace("-->", "");

@@ -8,7 +8,9 @@
   "devDependencies": {
     "axios": "^0.23.0",
     "nuxt3": "latest",
-    "patch-vue-directive-ssr": "0.0.1",
     "storyblok-js-client": "^4.1.5"
+  },
+  "dependencies": {
+    "patch-vue-directive-ssr": "0.0.1"
   }
 }
