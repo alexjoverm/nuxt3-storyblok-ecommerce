@@ -1,0 +1,14 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "start": "node .output/server/index.mjs"
+  },
+  "devDependencies": {
+    "axios": "^0.23.0",
+    "nuxt3": "latest",
+    "patch-vue-directive-ssr": "0.0.1",
+    "storyblok-js-client": "^4.1.5"
+  }
+}
